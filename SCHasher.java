@@ -5,13 +5,14 @@ import java.nio.ByteOrder;
 import java.util.BitSet;
 
 /**
- * I've spent some nice times understanding the logic, I'm not even sure if it's an hasher built by sc
- * nor if that code is the right representation of what is currently used on SC games.
- * The following implementation has been built by translating gdb assembly into java.
+ * I've spent some nice times understanding the logic, I'm not even sure if it's an hasher built by sc or third parties
+ * nor if that code is the right representation of what is currently used on SC games 
+ * (probably my code is way different but reach the same purpose).
+ * The following implementation has been built by translating gdb arm assembly into java.
  * The tables are coming from Clash Of Clans, and the following code (not sure?) will probably work on
  * Boom Beach and HayDay too (with different tables). 
  * 
- * There are possible ways to patch the table to generate a different kay to match any custom ones
+ * There are possible ways to patch the table to generate a different key to match any custom ones
  * but Pinocchio is patching at an higher level which wouldn't need anything more.
  * 
  *
